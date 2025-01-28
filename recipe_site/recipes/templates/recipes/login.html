@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style_register_and_login.css' %}">
+    <title>Вход</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Вход в систему</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Имя пользователя:</label>
+                {{ form.username }}
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                {{ form.password }}
+            </div>
+            <button type="submit">Войти</button>
+        </form>
+        <p>
+            <a href="{% url 'register' %}">Еще нет аккаунта? Зарегистрируйтесь!</a>
+        </p>
+    </div>
+    <a href="{% url 'home' %}">На главную</a>
+</body>
+</html>

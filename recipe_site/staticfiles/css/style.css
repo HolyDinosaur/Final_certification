@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg, green, yellow, orange, violet);
+    background-size: 400% 400%; 
+    animation: gradientAnimation 15s ease infinite;
+    color: #333;
+    line-height: 1.6;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: white; 
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px; 
+    font-weight: bold; 
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #66a6ff;
+    transition: color 0.3s ease;
+}
+
+h2 a:hover {
+    color: #ff6e7f;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white; 
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #45a049; 
+    background: linear-gradient(45deg, #FFD93D, #4CAF50);
+    transform: scale(1.05);
+
+}
+
+.pagination-link {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+
+.pagination-link:hover {
+    background-color: #45a049;
+    background: linear-gradient(45deg, #FFD93D, #4CAF50);
+    transform: scale(1.05);
+}
+
+.pagination-link.next, .pagination-link.last {
+}
+
+.username {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.username:hover {
+    background-color: #45a049;
+    background: linear-gradient(45deg, #FFD93D, #4CAF50);
+    transform: scale(1.05);
+}
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #6d00669c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 50px;
+}
+
+#scrollToTop:hover {
+    background-color: #0056b3;
+}
+
+#scrollToTop:active {
+    background-color: #004494;
+}

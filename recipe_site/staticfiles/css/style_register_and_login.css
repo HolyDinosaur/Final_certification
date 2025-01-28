@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: linear-gradient(60deg, #ff8a00, #e52e71);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(60deg, #e52e71, #ff8a00);
+    transform: scale(1.05);
+}
+
+.password-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}

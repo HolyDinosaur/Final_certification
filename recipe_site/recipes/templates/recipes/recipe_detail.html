@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style_detail.css' %}">
+    <title>{{ recipe.title }}</title>
+</head>
+<body>
+    <h1>{{ recipe.title }}</h1>
+    <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}">
+    <h3>Описание:</h3>
+    <p>{{ recipe.description }}</p>
+    <h3>Шаги приготовления:</h3>
+    <p>{{ recipe.preparation_steps }}</p>
+    <h3>Время приготовления:</h3>
+    <p>{{ recipe.cooking_time }} минут</p>
+    <p>Автор: {{ recipe.author }}</p>
+    <a href="{% url 'home' %}" class="button">Назад</a>
+</body>
+</html>
