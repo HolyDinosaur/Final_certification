@@ -39,7 +39,7 @@ label {
     font-size: 1rem;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 95%;
     padding: 10px;
     border: 1px solid #ccc;

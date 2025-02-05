@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: center; 
     margin: 20px 0;
     color: white; 
     font-size: 2.5em;
@@ -130,7 +130,7 @@ h2 a:hover {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #6d00669c;
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 50%;
@@ -142,9 +142,13 @@ h2 a:hover {
 }
 
 #scrollToTop:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
+    background: linear-gradient(45deg, #FFD93D, #4CAF50);
+    transform: scale(1.05);
 }
 
 #scrollToTop:active {
     background-color: #004494;
 }
+
+
