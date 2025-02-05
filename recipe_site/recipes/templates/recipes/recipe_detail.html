@@ -16,6 +16,9 @@
     <h3>Время приготовления:</h3>
     <p>{{ recipe.cooking_time }} минут</p>
     <p>Автор: {{ recipe.author }}</p>
+    {% if recipe.author == user %}
+    <a href="{% url 'edit_recipe' recipe.id %}" class="button">Редактировать рецепт</a>
+    {% endif %}
     <a href="{% url 'home' %}" class="button">Назад</a>
 </body>
 </html>

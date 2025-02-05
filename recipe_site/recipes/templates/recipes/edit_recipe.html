@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style_add.css' %}">
+    <title>Редактировать рецепт</title>
+</head>
+<body>
+    <h1>Редактировать рецепт: {{ recipe.title }}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить изменения</button>
+    </form>
+    <a href="{% url 'recipe_detail' recipe.id %}">Назад к рецепту</a>
+    <a href="{% url 'home' %}">На главную</a>
+</body>
+</html>
