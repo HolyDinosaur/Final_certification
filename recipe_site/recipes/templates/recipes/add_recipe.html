@@ -11,6 +11,13 @@
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
+	{% if form.image.errors %}
+            <div class="error">
+                {% for error in form.image.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
         <button type="submit">Сохранить рецепт</button>
     </form>
     <a href="{% url 'home' %}">На главную</a>

@@ -8,6 +8,10 @@ class RecipeForm(forms.ModelForm):
         model = Recipe
         fields = ['title', 'description', 'preparation_steps', 'cooking_time', 'image', 'categories']
 
+    def __init__(self, *args, **kwargs):
+        super(RecipeForm, self).__init__(*args, **kwargs)
+        self.fields['image'].required = True
+
 class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)
     class Meta:
