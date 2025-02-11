@@ -31,7 +31,8 @@ def home(request):
 
 def recipe_detail(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
-    return render(request, 'recipes/recipe_detail.html', {'recipe': recipe})
+    preparation_steps_list = recipe.preparation_steps.split(',')
+    return render(request, 'recipes/recipe_detail.html', {'recipe': recipe, 'preparation_steps': preparation_steps_list})
 
 def add_recipe(request):
     if request.method == 'POST':
